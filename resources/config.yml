@@ -7,7 +7,7 @@
 # \:\ \:\/:/  / \/\:\  \__  \:\~~\~~\/__/ \:\/:/ /:/  / \:\/:/  /     \:\/:/  /     \:\/:/ /:/  / \:\  \ /:/  /  /::\  \      \:\/:/ /:/  /
 #  \:\ \::/  /   ~~\:\/\__\  \:\  \        \::/_/:/  /   \::/__/       \::/__/       \::/_/:/  /   \:\  /:/  /  /:/\:\  \      \::/ /:/  /
 #   \:\/:/  /       \::/  /   \:\  \        \:\/:/  /     \:\  \        \:\  \        \:\/:/  /     \:\/:/  /   \/__\:\  \      \/_/:/  /
-#    \::/  /        /:/  /     \:\__\        \::/  /       \:\__\        \:\__\        \::/  /       \::/  /         \:\__\       /:/  |
+#    \::/  /        /:/  /     \:\__\        \::/  /       \:\__\        \:\__\        \::/  /       \::/  /         \:\__\       /:/  /
 #     \/__/         \/__/       \/__/         \/__/         \/__/         \/__/         \/__/         \/__/           \/__/       \/__/
 #
 #
@@ -25,8 +25,6 @@
 
 
 # WinEffects Plugin | Made by ManuGooX
-#
-#Version 1.0.1
 
 #Material List:
 #  1.16 - https://helpch.at/docs/1.16.5/org/bukkit/Material.html
@@ -70,6 +68,9 @@ debug-messages: false
 # |                       Options                        | #
 # +------------------------------------------------------+ #
 ############################################################
+#This will check if there is a new version of the plugin.
+#I recommend you keeping this true.
+update-checker: true
 #This options will make you buy wineffects with Vault plugin.
 Economy: false
 #This option will make players with wineffect permission bypass the pay of the effects.
@@ -84,7 +85,9 @@ RemoveFallingEntities: true
 ############################################################
 #This are custom permissions that you can change and modify as you want to
 permissions:
+  update-admin: we.admin.update
   start-admin: we.admin.start
+  stop-admin: we.admin.stop
   coins-admin: we.admin.coins
   help-admin: we.admin.help
   reload: we.admin.reload
@@ -96,13 +99,13 @@ permissions:
 ############################################################
 
 Storage:
-  #There are two types at the moment
+  #You can storage your items in three types of dababase
   #YML - This one is a local text document
-  #MySQL - A remote database
+  #MySQL - Remote database
   Type: YML
-  #Options below are only meant to be used if you are going to use a MySQL
+  #Options below are only meant to be used if you are going to use a MySQL or MongoDB
   host: "localhost"
-  port: "3306"
+  port: 3306
   database: ""
   username: "root"
   password: "yourpassword"
