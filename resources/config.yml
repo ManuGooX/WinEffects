@@ -1,0 +1,223 @@
+#      ___                       ___           ___           ___           ___           ___           ___                         ___
+#     /\  \                     /\  \         /\__\         /\__\         /\__\         /\__\         /\__\                       /\__\
+#    _\:\  \       ___          \:\  \       /:/ _/_       /:/ _/_       /:/ _/_       /:/ _/_       /:/  /          ___         /:/ _/_
+#   /\ \:\  \     /\__\          \:\  \     /:/ /\__\     /:/ /\__\     /:/ /\__\     /:/ /\__\     /:/  /          /\__\       /:/ /\  \
+#  _\:\ \:\  \   /:/__/      _____\:\  \   /:/ /:/ _/_   /:/ /:/  /    /:/ /:/  /    /:/ /:/ _/_   /:/  /  ___     /:/  /      /:/ /::\  \
+# /\ \:\ \:\__\ /::\  \     /::::::::\__\ /:/_/:/ /\__\ /:/_/:/  /    /:/_/:/  /    /:/_/:/ /\__\ /:/__/  /\__\   /:/__/      /:/_/:/\:\__\
+# \:\ \:\/:/  / \/\:\  \__  \:\~~\~~\/__/ \:\/:/ /:/  / \:\/:/  /     \:\/:/  /     \:\/:/ /:/  / \:\  \ /:/  /  /::\  \      \:\/:/ /:/  /
+#  \:\ \::/  /   ~~\:\/\__\  \:\  \        \::/_/:/  /   \::/__/       \::/__/       \::/_/:/  /   \:\  /:/  /  /:/\:\  \      \::/ /:/  /
+#   \:\/:/  /       \::/  /   \:\  \        \:\/:/  /     \:\  \        \:\  \        \:\/:/  /     \:\/:/  /   \/__\:\  \      \/_/:/  /
+#    \::/  /        /:/  /     \:\__\        \::/  /       \:\__\        \:\__\        \::/  /       \::/  /         \:\__\       /:/  /
+#     \/__/         \/__/       \/__/         \/__/         \/__/         \/__/         \/__/         \/__/           \/__/       \/__/
+#
+#
+#      ___           ___           ___           ___                       ___
+#     /\__\         /\  \         /\  \         /\__\                     /\__\
+#    /:/  /        /::\  \        \:\  \       /:/ _/_       ___         /:/ _/_
+#   /:/  /        /:/\:\  \        \:\  \     /:/ /\__\     /\__\       /:/ /\  \
+#  /:/  /  ___   /:/  \:\  \   _____\:\  \   /:/ /:/  /    /:/__/      /:/ /::\  \
+# /:/__/  /\__\ /:/__/ \:\__\ /::::::::\__\ /:/_/:/  /    /::\  \     /:/__\/\:\__\
+# \:\  \ /:/  / \:\  \ /:/  / \:\~~\~~\/__/ \:\/:/  /     \/\:\  \__  \:\  \ /:/  /
+#  \:\  /:/  /   \:\  /:/  /   \:\  \        \::/__/       ~~\:\/\__\  \:\  /:/  /
+#   \:\/:/  /     \:\/:/  /     \:\  \        \:\  \          \::/  /   \:\/:/  /
+#    \::/  /       \::/  /       \:\__\        \:\__\         /:/  /     \::/  /
+#     \/__/         \/__/         \/__/         \/__/         \/__/       \/__/
+
+
+# WinEffects Plugin | Made by ManuGooX
+
+#Material List:
+#  1.16 - https://helpch.at/docs/1.16.5/org/bukkit/Material.html
+#  1.15 - https://helpch.at/docs/1.15.2/org/bukkit/Material.html
+#  1.14 - https://helpch.at/docs/1.14.2/org/bukkit/Material.html
+#  1.13 - https://helpch.at/docs/1.13.2/org/bukkit/Material.html
+#  1.12 - https://helpch.at/docs/1.12.2/org/bukkit/Material.html
+#  1.11 - https://helpch.at/docs/1.11.2/org/bukkit/Material.html
+#  1.10 - https://helpch.at/docs/1.10.2/org/bukkit/Material.html
+#  1.9 - https://helpch.at/docs/1.9.4/org/bukkit/Material.html
+#  1.8 - https://helpch.at/docs/1.8.8/org/bukkit/Material.html
+#
+#Sound List:
+#  1.16 - https://helpch.at/docs/1.16.5/org/bukkit/Sound.html
+#  1.15 - https://helpch.at/docs/1.15.2/org/bukkit/Sound.html
+#  1.14 - https://helpch.at/docs/1.14.2/org/bukkit/Sound.html
+#  1.13 - https://helpch.at/docs/1.13.2/org/bukkit/Sound.html
+#  1.12 - https://helpch.at/docs/1.12.2/org/bukkit/Sound.html
+#  1.11 - https://helpch.at/docs/1.11.2/org/bukkit/Sound.html
+#  1.10 - https://helpch.at/docs/1.10.2/org/bukkit/Sound.html
+#  1.9 - https://helpch.at/docs/1.9.4/org/bukkit/Sound.html
+#  1.8 - https://helpch.at/docs/1.8.8/org/bukkit/Sound.html
+#
+#Custom Heads: https://minecraft-heads.com/custom-heads
+#
+#
+# WARNING: Changing options as economy and storage requires a restart of the server
+#
+############################################################
+# +------------------------------------------------------+ #
+# |                       General                        | #
+# +------------------------------------------------------+ #
+############################################################
+
+#Messages created by developer to check errors and bugs with plugin, if you have any bug
+#you should activate this option and contact the developer.
+debug-messages: false
+
+############################################################
+# +------------------------------------------------------+ #
+# |                       Options                        | #
+# +------------------------------------------------------+ #
+############################################################
+#This options will make you buy wineffects with Vault plugin.
+Economy: false
+#This option will make players with wineffect permission bypass the pay of the effects.
+PermissionBypass: true
+#This option will make entites from wineffects to be removed after a certain time.
+RemoveFallingEntities: true
+
+############################################################
+# +------------------------------------------------------+ #
+# |                 Custom Permissions                   | #
+# +------------------------------------------------------+ #
+############################################################
+#This are custom permissions that you can change and modify as you want to
+permissions:
+  start-admin: we.admin.start
+  coins-admin: we.admin.coins
+  help-admin: we.admin.help
+  reload: we.admin.reload
+
+############################################################
+# +------------------------------------------------------+ #
+# |                      STORAGE                         | #
+# +------------------------------------------------------+ #
+############################################################
+
+Storage:
+  #You can storage your items in three types of dababase
+  #YML - This one is a local text document
+  #MySQL - Remote database
+  Type: YML
+  #Options below are only meant to be used if you are going to use a MySQL or MongoDB
+  host: "localhost"
+  port: 3306
+  database: ""
+  username: "root"
+  password: "yourpassword"
+
+############################################################
+# +------------------------------------------------------+ #
+# |                  Inventory - Options                 | #
+# +------------------------------------------------------+ #
+############################################################
+Inventory:
+  rows: 5
+  #This option is the amount of how many effects are displayed in one inventory page.
+  EffectsPerPage: 36
+  name: "&7WinEffects"
+  items:
+    #example-item:
+    #Slot where the item will be some items won't need it as effects.
+    #slot: 40
+    #Material of the item, this will change depending of your minecraft version.
+    #material: WOOL
+    #Id data of the item, this will change the data of the item as an example:
+    #If your material is "WOOL" and id equals "10" the item will be purple.
+    #id: 0
+    #Posible Actions
+    #'<message> player:&cThis is a player message' Sends a player message
+    #'<message> console:&cThis is a console message' Sends a console message
+
+    #'<command> player:miniatures' Make player execute a command
+    #'<command> console:vlobby lag' Make console execute a command
+
+    #'<connect> Lobby' Sends player to a server in this case server Lobby
+
+    #'<close>' Close player's open inventory
+    #
+    #'<deselect> Item to reset your current wineffect'
+    #'<nextpage> Item to get to next page'
+    #'<previouspage> Item to get to previous page'
+    #actions:
+    #- "<close>"
+    #SkullOptions:
+    #Type can have 2 options
+    # "texture" - Will get a custom textured head
+    # "player" - Will get a player head
+    #type: texture
+    #Example Skull: https://minecraft-heads.com/custom-heads/decoration/297-enchantment-table
+    #Texture type: For texture you must go to "Other" section which will be "value" and
+    #for id you must go to give-code and search for line "id" remember to choose the one with your minecraft version.
+    #
+    #Player type: If you are using player in your head type you can put a name of a player or just "%player%" if you want
+    #the head to be the opening player's head
+    #id: "198765c1-c236-4c7d-8555-d0dbacfcb123"
+    #Texture will be value
+    #texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc2MmExNWIwNDY5MmEyZTRiM2ZiMzY2M2JkNGI3ODQzNGRjZTE3MzJiOGViMWM3YTlmN2MwZmJmNmYifX19"
+    #This is the name of the item in the inventory
+    #name: '&9Close'
+    #This are the lines that the item will have below the name.
+    #lore:
+    # - '&7Click to close'
+    # - '&7the menu.'
+    close-item:
+      slot: 40
+      material: BOOK
+      id: 0
+      actions:
+        - "<close>"
+      SkullOptions:
+        type:
+        id: "198765c1-c236-4c7d-8555-d0dbacfcb123"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTc2MmExNWIwNDY5MmEyZTRiM2ZiMzY2M2JkNGI3ODQzNGRjZTE3MzJiOGViMWM3YTlmN2MwZmJmNmYifX19"
+      name: '&9Close'
+      lore:
+        - '&7Click to close'
+        - '&7the menu.'
+    deselect-item:
+      slot: 39
+      material: BARRIER
+      id: 0
+      actions:
+        - "<deselect>"
+      SkullOptions:
+        id: "dca29a3a-76d3-4979-88a2-2da034b99212"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNlZjlhYTE0ZTg4NDc3M2VhYzEzNGE0ZWU4OTcyMDYzZjQ2NmRlNjc4MzYzY2Y3YjFhMjFhODViNyJ9fX0="
+      name: "&e&lDeselect WinEffect"
+      lore:
+        - "&6Play without a selected wineffect."
+    selected:
+      slot: 41
+      actions:
+        - "<selected>"
+      name: "&a&lSelected WinEffect: <effect>"
+      lore:
+        - '<effectlore>'
+        - ''
+        - '&6This wineffect is selected'
+    nextpage:
+      slot: 44
+      material: SUGAR_CANE
+      id: 0
+      actions:
+        - "<nextpage>"
+      SkullOptions:
+        id: "dca29a3a-76d3-4979-88a2-2da034b99212"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNlZjlhYTE0ZTg4NDc3M2VhYzEzNGE0ZWU4OTcyMDYzZjQ2NmRlNjc4MzYzY2Y3YjFhMjFhODViNyJ9fX0="
+      name: '&9Next page'
+      lore:
+        - '&7Click to go to'
+        - '&7next page.'
+    previouspage:
+      slot: 36
+      material: SUGAR_CANE
+      id: 0
+      actions:
+        - "<previouspage>"
+      SkullOptions:
+        id: "dca29a3a-76d3-4979-88a2-2da034b99212"
+        texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNlZjlhYTE0ZTg4NDc3M2VhYzEzNGE0ZWU4OTcyMDYzZjQ2NmRlNjc4MzYzY2Y3YjFhMjFhODViNyJ9fX0="
+      name: '&9Previous page'
+      lore:
+        - '&7Click to go to'
+        - '&7previous page.'
