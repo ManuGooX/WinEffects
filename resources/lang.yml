@@ -35,6 +35,8 @@
 commands:
   Reload: "&aThe plugin has been reloaded correctly."
   EffectsNone: "&CThis player does not have any wineffect."
+  EffectStopped: "&aYou have stopped <player>'s wineffect"
+  EffectNotStarted: "&cPlayer <player> has not started his wineffect."
   EffectStarted: "&aYou have started effect for player <player>"
   EffectAlreadyStarted: "&cThis player has already started his wineffect."
   CoinsAmount: "&aYou have &e<coins> &aamount of coins."
