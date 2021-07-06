@@ -68,6 +68,9 @@ debug-messages: false
 # |                       Options                        | #
 # +------------------------------------------------------+ #
 ############################################################
+#This will check if there is a new version of the plugin.
+#I recommend you keeping this true.
+update-checker: true
 #This options will make you buy wineffects with Vault plugin.
 Economy: false
 #This option will make players with wineffect permission bypass the pay of the effects.
@@ -82,7 +85,9 @@ RemoveFallingEntities: true
 ############################################################
 #This are custom permissions that you can change and modify as you want to
 permissions:
+  update-admin: we.admin.update
   start-admin: we.admin.start
+  stop-admin: we.admin.stop
   coins-admin: we.admin.coins
   help-admin: we.admin.help
   reload: we.admin.reload
