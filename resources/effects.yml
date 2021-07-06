@@ -11,156 +11,65 @@
 #     \/__/         \/__/       \/__/         \/__/         \/__/         \/__/         \/__/         \/__/           \/__/       \/__/
 #
 #
-#      ___           ___           ___           ___           ___                         ___
-#     /\__\         /\__\         /\__\         /\__\         /\__\                       /\__\
-#    /:/ _/_       /:/ _/_       /:/ _/_       /:/ _/_       /:/  /          ___         /:/ _/_
-#   /:/ /\__\     /:/ /\__\     /:/ /\__\     /:/ /\__\     /:/  /          /\__\       /:/ /\  \
-#  /:/ /:/ _/_   /:/ /:/  /    /:/ /:/  /    /:/ /:/ _/_   /:/  /  ___     /:/  /      /:/ /::\  \
-# /:/_/:/ /\__\ /:/_/:/  /    /:/_/:/  /    /:/_/:/ /\__\ /:/__/  /\__\   /:/__/      /:/_/:/\:\__\
-# \:\/:/ /:/  / \:\/:/  /     \:\/:/  /     \:\/:/ /:/  / \:\  \ /:/  /  /::\  \      \:\/:/ /:/  /
-#  \::/_/:/  /   \::/__/       \::/__/       \::/_/:/  /   \:\  /:/  /  /:/\:\  \      \::/ /:/  /
-#   \:\/:/  /     \:\  \        \:\  \        \:\/:/  /     \:\/:/  /   \/__\:\  \      \/_/:/  /
-#    \::/  /       \:\__\        \:\__\        \::/  /       \::/  /         \:\__\       /:/  /
-#     \/__/         \/__/         \/__/         \/__/         \/__/           \/__/       \/__/
-#
-#
-#Material List:
-#  1.16 - https://helpch.at/docs/1.16.5/org/bukkit/Material.html
-#  1.15 - https://helpch.at/docs/1.15.2/org/bukkit/Material.html
-#  1.14 - https://helpch.at/docs/1.14.2/org/bukkit/Material.html
-#  1.13 - https://helpch.at/docs/1.13.2/org/bukkit/Material.html
-#  1.12 - https://helpch.at/docs/1.12.2/org/bukkit/Material.html
-#  1.11 - https://helpch.at/docs/1.11.2/org/bukkit/Material.html
-#  1.10 - https://helpch.at/docs/1.10.2/org/bukkit/Material.html
-#  1.9 - https://helpch.at/docs/1.9.4/org/bukkit/Material.html
-#  1.8 - https://helpch.at/docs/1.8.8/org/bukkit/Material.html
-#
-#Sound List:
-#  1.16 - https://helpch.at/docs/1.16.5/org/bukkit/Sound.html
-#  1.15 - https://helpch.at/docs/1.15.2/org/bukkit/Sound.html
-#  1.14 - https://helpch.at/docs/1.14.2/org/bukkit/Sound.html
-#  1.13 - https://helpch.at/docs/1.13.2/org/bukkit/Sound.html
-#  1.12 - https://helpch.at/docs/1.12.2/org/bukkit/Sound.html
-#  1.11 - https://helpch.at/docs/1.11.2/org/bukkit/Sound.html
-#  1.10 - https://helpch.at/docs/1.10.2/org/bukkit/Sound.html
-#  1.9 - https://helpch.at/docs/1.9.4/org/bukkit/Sound.html
-#  1.8 - https://helpch.at/docs/1.8.8/org/bukkit/Sound.html
-#
-############################################################
-# +------------------------------------------------------+ #
-# |                  Inventory - Options                 | #
-# +------------------------------------------------------+ #
-############################################################
-EffectInventoryLores:
-  #Lore that will be assigned to items when you don't have any perms
-  PermissionLore:
-    - ''
-    - '&5Perms Required: &a<perms>'
-    - ''
-    - '&cYou need more perms!'
-  #Lore that will be assigned to items when economy is enabled and item cost more than 0
-  BuyLore:
-    - ''
-    - '&5Price: &a<price> coins'
-    - ''
-    - '&6Click to purchase this kit'
-  #Lore that will be assigned to items when economy is enabled and item cost 0
-  FreeLore:
-    - ''
-    - '&a&lFree Kit!'
-    - ''
-    - '&6Click to purchase this kit'
-  #Lore that will be assigned to items that you have bought before or you have permission to
-  SelectLore:
-    - ''
-    - '&6Click to select!'
+#                    ___           ___           ___           ___           ___           ___           ___
+#                   /\  \         /\  \         /\__\         /\  \         /\  \         /\__\         /\__\
+#                  /::\  \        \:\  \       /:/ _/_        \:\  \       /::\  \       /:/ _/_       /:/ _/_
+#                 /:/\:\  \        \:\  \     /:/ /\  \        \:\  \     /:/\:\  \     /:/ /\  \     /:/ /\__\
+#  ___     ___   /:/ /::\  \   _____\:\  \   /:/ /::\  \   ___  \:\  \   /:/ /::\  \   /:/ /::\  \   /:/ /:/ _/_
+# /\  \   /\__\ /:/_/:/\:\__\ /::::::::\__\ /:/__\/\:\__\ /\  \  \:\__\ /:/_/:/\:\__\ /:/__\/\:\__\ /:/_/:/ /\__\
+# \:\  \ /:/  / \:\/:/  \/__/ \:\~~\~~\/__/ \:\  \ /:/  / \:\  \ /:/  / \:\/:/  \/__/ \:\  \ /:/  / \:\/:/ /:/  /
+#  \:\  /:/  /   \::/__/       \:\  \        \:\  /:/  /   \:\  /:/  /   \::/__/       \:\  /:/  /   \::/_/:/  /
+#   \:\/:/  /     \:\  \        \:\  \        \:\/:/  /     \:\/:/  /     \:\  \        \:\/:/  /     \:\/:/  /
+#    \::/  /       \:\__\        \:\__\        \::/  /       \::/  /       \:\__\        \::/  /       \::/  /
+#     \/__/         \/__/         \/__/         \/__/         \/__/         \/__/         \/__/         \/__/
+
+
+# WinEffects Plugin | Made by ManuGooX
 
 ############################################################
 # +------------------------------------------------------+ #
-# |                   Effects - Options                  | #
+# |                      Commands                        | #
 # +------------------------------------------------------+ #
 ############################################################
-Effects:
-  fireworks:
-    #Permission to can select the win effect
-    #If economy is enabled it will depend if you have enabled PermissionBypass in config
-    permission: wineffect.firework
-    #Cost of the wineffect to buy it
-    cost: 0
-    material: FIREWORK
-    id: 0
-    SkullOptions:
-      #Here you can only put textured heads
-      id: "dca29a3a-76d3-4979-88a2-2da034b99212"
-      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNlZjlhYTE0ZTg4NDc3M2VhYzEzNGE0ZWU4OTcyMDYzZjQ2NmRlNjc4MzYzY2Y3YjFhMjFhODViNyJ9fX0="
-    name: "&e&lFireworks"
-    lore:
-      - '&7Win Effect with the one you'
-      - '&7throw fireworks.'
-    #Type of wineffect that this effect will make
-    #Two types at the moment
-    # "fireworks" - Will spawn some fireworks
-    # "volcan" - Will spawn entities and throw around you
-    type: fireworks
-    options:
-      #This option will activate or desactivate fireworks
-      fireworks: true
-      #This option will only affect if fireworks is true
-      instantfirework: false
-      #Interval in ticks
-      interval: 10
-      #Amount of fireworks
-      amount: 10
-  woolvolcan:
-    permission: wineffect.woolvolcan
-    cost: 200
-    material: WOOL
-    id: 10
-    SkullOptions:
-      id: "dca29a3a-76d3-4979-88a2-2da034b99212"
-      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNlZjlhYTE0ZTg4NDc3M2VhYzEzNGE0ZWU4OTcyMDYzZjQ2NmRlNjc4MzYzY2Y3YjFhMjFhODViNyJ9fX0="
-    name: "&e&lWool Volcan"
-    lore:
-      - '&7Win Effect with the one you'
-      - '&7throw wool blocks all over the'
-      - '&7map.'
-    type: volcan
-    options:
-      #This option is only for volcan effect and can have two values
-      #BLOCK - Will spawn blocks and throw them around you
-      #MOB - Will spawn entities and throw them around you
-      type: BLOCK
-      #Material of the block that will be throw
-      material: WOOL
-      #Data of the block that will be throw (if randomids is false)
-      id: 10
-      #Will spawn randomids of the material block selected
-      randomids: true
-      #Sound that will be sent to the player everytime a block or mob gets spawned
-      sound: ITEM_PICKUP
-      #Interval in ticks between every block/mob spawn
-      interval: 3
-      #Amount of blocks before it stops
-      amount: 50
-  zombievolcan:
-    permission: wineffect.zombievolcan
-    cost: 300
-    material: MONSTER_EGG
-    id: 54
-    SkullOptions:
-      id: "dca29a3a-76d3-4979-88a2-2da034b99212"
-      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNlZjlhYTE0ZTg4NDc3M2VhYzEzNGE0ZWU4OTcyMDYzZjQ2NmRlNjc4MzYzY2Y3YjFhMjFhODViNyJ9fX0="
-    name: "&e&lZombie Volcan"
-    lore:
-      - '&7Win Effect with the one you'
-      - '&7throw zombies all over the'
-      - '&7map.'
-    type: volcan
-    options:
-      type: MOB
-      #Entity that will be spawned and thrown.
-      entity: ZOMBIE
-      randomids: true
-      sound: ITEM_PICKUP
-      interval: 3
-      amount: 50
+
+commands:
+  Reload: "&aThe plugin has been reloaded correctly."
+  EffectsNone: "&CThis player does not have any wineffect."
+  EffectStopped: "&aYou have stopped <player>'s wineffect"
+  EffectNotStarted: "&cPlayer <player> has not started his wineffect."
+  EffectStarted: "&aYou have started effect for player <player>"
+  EffectAlreadyStarted: "&cThis player has already started his wineffect."
+  CoinsAmount: "&aYou have &e<coins> &aamount of coins."
+  CoinsGiven: "&aYou give &e<coins> &acoins to &e<player>&a."
+  CoinsError: "&cThere was an error removing coins from player &e<player> &c,perhaps he don't have any coins or the amount of coins inserted is bigger than the one he has."
+  CoinsRemoved: "&aYou removed &e<coins> &aof coins to &e<player>&a."
+  NeedPerms: "&cYou need &e<perms> &cto use this command."
+  NeedArguments: "&cYou need to use more arguments for this command. Type &e/wineffects &cfor help."
+  HelpInfo:
+    - "&7&m----------&7[ &e&lWinEffects Help &7]&7&m----------"
+    - ""
+    - "&aPlugin Version: &6<version>"
+    - "&aCreated by ManuGooX"
+    - ""
+    - "<admin>"
+    - "<admin>&e/wineffects help &7- &9Show this message."
+    - "<admin>&e/wineffects reload &7- &9Reload plugin files and data."
+    - "<admin>&e/wineffects start <player> &7- &9Start a player's wineffect."
+    - "&e/wineffects menu &7- &9Menu of the wineffects."
+    - "&e/wineffects coins &7- &9See your coins."
+    - "<admin>&e/wineffects coins add/remove <player> <amount> &7- &9Coins commands."
+
+############################################################
+# +------------------------------------------------------+ #
+# |                     Inventory                        | #
+# +------------------------------------------------------+ #
+############################################################
+Inventory:
+  needperms: "&cYou need &e<perms> &cto select this wineffect."
+  bypassperms: "&aYou have selected this effect as you have permission to bypass the economy."
+  alreadydefault: "&cYou already have default wineffect selected."
+  alreadyselected: "&cYou already have this wineffect selected."
+  coinserror: "&cYou don't have enough money to buy this effect."
+  buyandselected: "&aYou have bought and selected this wineffect."
+  selected: "&aYou have selected wineffect: &e<wineffect>"
+  deselected: "&aYou have successfully deselected the wineffect."
