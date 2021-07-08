@@ -77,6 +77,8 @@ Economy: false
 PermissionBypass: true
 #This option will make entites from wineffects to be removed after a certain time.
 RemoveFallingEntities: true
+#This option will make falling block entities that are tnt will explode after touching floor.
+FallingBlockTnTExplosions: true
 
 ############################################################
 # +------------------------------------------------------+ #
