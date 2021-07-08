@@ -176,7 +176,7 @@ Effects:
     permission: wineffect.iceworld
     cost: 300
     material: PACKED_ICE
-    id: 54
+    id: 0
     SkullOptions:
       id: "dca29a3a-76d3-4979-88a2-2da034b99212"
       texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNlZjlhYTE0ZTg4NDc3M2VhYzEzNGE0ZWU4OTcyMDYzZjQ2NmRlNjc4MzYzY2Y3YjFhMjFhODViNyJ9fX0="
@@ -187,9 +187,35 @@ Effects:
       - '&7you into ice.'
     type: floorchange
     options:
+      #Material in which the blocks around you will be converted
+      Material: ICE
       interval: 6
       #Radius of blocks that will be affected around the player (x and z)
       radius: 20
       #Radius of blocks in y cordinate that will be affected around the player (y)
       height: 30
-      Material: ICE
+      #Sound that will be sent to the player everytime a block gets changed
+      sound: ITEM_PICKUP
+  tntrain:
+    permission: wineffect.tntrain
+    cost: 250
+    material: TNT
+    id: 0
+    SkullOptions:
+      id: "dca29a3a-76d3-4979-88a2-2da034b99212"
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNlZjlhYTE0ZTg4NDc3M2VhYzEzNGE0ZWU4OTcyMDYzZjQ2NmRlNjc4MzYzY2Y3YjFhMjFhODViNyJ9fX0="
+    name: "&e&lTnT Rain"
+    lore:
+      - '&7Win Effect with the one you'
+      - '&7tnt blocks will appear around'
+      - '&7you in the sky and will fall'
+      - '&7until they explode.'
+    type: rain
+    options:
+      #Material in which the blocks that will spawn
+      material: TNT
+      #Amount of block spawned per interval
+      amount: 15
+      interval: 6
+      #Amount of times that will spawn blocks
+      times: 50
