@@ -79,6 +79,8 @@ PermissionBypass: true
 RemoveFallingEntities: true
 #This option will make falling block entities that are tnt will explode after touching floor.
 FallingBlockTnTExplosions: true
+#This option will make when a player is executing his wineffect will not suffer damage.
+PlayerInvincible: true
 
 ############################################################
 # +------------------------------------------------------+ #
