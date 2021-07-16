@@ -92,6 +92,7 @@ permissions:
   update-admin: we.admin.update
   start-admin: we.admin.start
   stop-admin: we.admin.stop
+  seteffect-admin: we.admin.seteffect
   coins-admin: we.admin.coins
   help-admin: we.admin.help
   reload: we.admin.reload
