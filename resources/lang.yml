@@ -34,6 +34,9 @@
 
 commands:
   Reload: "&aThe plugin has been reloaded correctly."
+  PlayerNotOnline: "&cThis player is not online."
+  EffectNotExist: "&cThis effect does not exist."
+  EffectSet: "&aYou have set <player>'s wineffect to <wineffect>"
   EffectsNone: "&CThis player does not have any wineffect."
   EffectStopped: "&aYou have stopped <player>'s wineffect"
   EffectNotStarted: "&cPlayer <player> has not started his wineffect."
@@ -54,6 +57,7 @@ commands:
     - "<admin>"
     - "<admin>&e/wineffects help &7- &9Show this message."
     - "<admin>&e/wineffects reload &7- &9Reload plugin files and data."
+    - "<admin>&e/wineffects seteffect <player> <effect> &7- &9Set a player's wineffect."
     - "<admin>&e/wineffects start <player> &7- &9Start a player's wineffect."
     - "<admin>&e/wineffects stop <player> &7- &9Stop a player's wineffect."
     - "&e/wineffects menu &7- &9Menu of the wineffects."
