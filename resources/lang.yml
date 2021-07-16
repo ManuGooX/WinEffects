@@ -34,6 +34,9 @@
 
 commands:
   Reload: "&aThe plugin has been reloaded correctly."
+  PlayerNotOnline: "&cThis player is not online."
+  EffectNotExist: "&cThis effect does not exist."
+  EffectSet: "&aYou have set <player>'s wineffect to <wineffect>"
   EffectsNone: "&CThis player does not have any wineffect."
   EffectStopped: "&aYou have stopped <player>'s wineffect"
   EffectNotStarted: "&cPlayer <player> has not started his wineffect."
