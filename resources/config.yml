@@ -81,6 +81,8 @@ RemoveFallingEntities: true
 FallingBlockTnTExplosions: true
 #This option will make when a player is executing his wineffect will not suffer damage.
 PlayerInvincible: true
+#This option will make when a player change world will disable it current wineffect.
+ChangeWorldDisableEffect: true
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -92,6 +94,7 @@ permissions:
   update-admin: we.admin.update
   start-admin: we.admin.start
   stop-admin: we.admin.stop
+  clear-admin: we.admin.clear
   seteffect-admin: we.admin.seteffect
   coins-admin: we.admin.coins
   help-admin: we.admin.help
