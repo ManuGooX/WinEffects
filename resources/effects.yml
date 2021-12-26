@@ -139,9 +139,9 @@ Effects:
       #Sound that will be sent to the player everytime a block or mob gets spawned
       sound: ITEM_PICKUP
       #Interval in ticks between every block/mob spawn
-      interval: 3
+      interval: 2
       #Amount of blocks before it stops
-      amount: 50
+      amount: 80
   zombievolcan:
     permission: wineffect.zombievolcan
     cost: 300
@@ -172,6 +172,10 @@ Effects:
         #List of items that will be dropped
         drop-items:
           - ROTTEN_FLESH
+        #Time before removing entity
+        time: 30
+        #Time before removing drops
+        timedrop: 20
   iceworld:
     permission: wineffect.iceworld
     cost: 300
@@ -212,6 +216,7 @@ Effects:
       - '&7until they explode.'
     type: rain
     options:
+      type: BLOCKS
       #Material in which the blocks that will spawn
       material: TNT
       #Amount of block spawned per interval
@@ -219,6 +224,20 @@ Effects:
       interval: 6
       #Amount of times that will spawn blocks
       times: 50
+      #Entity that will be spawned if tye is ENTITY
+      entity: ZOMBIE
+      removeoptions:
+        #Will spawn a firework after removing the entity
+        firework: true
+        #Will drop a list of items in the entity location.
+        drops: true
+        #List of items that will be dropped
+        drop-items:
+          - ROTTEN_FLESH
+        #Time before removing entity
+        time: 80
+        #Time before removing drops
+        timedrop: 40
   dragonrider:
     permission: wineffect.dragonrider
     cost: 250
@@ -234,14 +253,24 @@ Effects:
     type: blockdestroyer
     options:
       entity: ENDER_DRAGON
+      #Set the speed at the entity will move
+      speed: 1.8
       #Enable or disable if mob can destroy blocks
       destroyblocks: true
+      #Enable or disable if mob make an explosion when destroying blocks
+      explosion: true
       #Enable or disable if destroyed blocks appear as falling blocks all over the map.
       fallingblocksdestroyed: false
       #Radius of blocks that will be destroyed
       radius: 5
       #Spawn a firewall and shoot it
       fireball: true
+      #Select if entity is sheep to change colours
+      coloredSheep: false
+      #Select if sound is enabled
+      soundEnable: false
+      #Sound that will be sent to the player everytime a blocks get destroyed
+      sound: ITEM_PICKUP
       #Time before removing entity in ticks
       time: 400
   toystick:
@@ -260,4 +289,39 @@ Effects:
     type: toystick
     options:
       item-name: "&aMagic Toy Stick"
-      particles: false
+      particles: true
+  sheeprider:
+    permission: wineffect.sheeprider
+    cost: 250
+    material: WOOL
+    id: 0
+    SkullOptions:
+      id: "dca29a3a-76d3-4979-88a2-2da034b99212"
+      texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNlZjlhYTE0ZTg4NDc3M2VhYzEzNGE0ZWU4OTcyMDYzZjQ2NmRlNjc4MzYzY2Y3YjFhMjFhODViNyJ9fX0="
+    name: "&e&lColored Sheep"
+    lore:
+      - '&7Win Effect with the one you'
+      - '&7ride a colored sheep all over the map.'
+    type: blockdestroyer
+    options:
+      entity: SHEEP
+      #Set the speed at the entity will move
+      speed: 2
+      #Enable or disable if mob can destroy blocks
+      destroyblocks: true
+      #Enable or disable if mob make an explosion when destroying blocks
+      explosion: false
+      #Enable or disable if destroyed blocks appear as falling blocks all over the map.
+      fallingblocksdestroyed: false
+      #Radius of blocks that will be destroyed
+      radius: 3
+      #Spawn a firewall and shoot it
+      fireball: false
+      #Select if entity is sheep to change colours
+      coloredSheep: true
+      #Select if sound is enabled
+      soundEnable: true
+      #Sound that will be sent to the player everytime a blocks get destroyed
+      sound: ITEM_PICKUP
+      #Time before removing entity in ticks
+      time: 400
